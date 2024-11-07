@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
+    "floating-vue": "^5.2.2",
     "path": "^0.12.7",
     "pinia": "^2.2.6",
     "vue": "^3.5.12",
