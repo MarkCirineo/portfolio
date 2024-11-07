@@ -20,14 +20,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
-type Button = {
-    key: string;
-    tooltip: string;
-    icon: string;
-    link?: string;
-    callback?: () => void;
-};
+import { Button } from "@typings/hero";
 
 export default defineComponent({
     name: "Hero",
