@@ -1,8 +1,8 @@
 <template>
     <div class="hero">
-        <div class="name">Mark Cirineo</div>
-        <div class="title">Full-stack Web Developer</div>
-        <div class="buttons">
+        <div class="hero-name">Mark Cirineo</div>
+        <div class="hero-title">Full-stack Web Developer</div>
+        <div class="hero-buttons">
             <template v-for="button in buttons" :key="button.key">
                 <component
                     :is="button.link ? 'a' : 'span'"
@@ -11,7 +11,7 @@
                     v-tooltip.bottom="{ content: button.tooltip, distance: 10 }"
                     @click="handleClick(button)"
                 >
-                    <i :class="button.icon" class="icon" />
+                    <i :class="button.icon" class="hero-icon" />
                 </component>
             </template>
         </div>
@@ -91,34 +91,30 @@ export default defineComponent({
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
-.name {
+.hero-name {
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-.title {
+.hero-title {
     font-size: 1.1rem;
     font-weight: 300;
     padding-bottom: 6px;
 }
 
-.location {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.buttons {
+.hero-buttons {
     display: flex;
     gap: 8px;
 }
 
-.icon {
-    font-size: 20px;
+.hero-icon {
+    font-size: 1.25rem;
 }
 
-.icon:hover {
+.hero-icon:hover {
     cursor: pointer;
 }
 </style>
