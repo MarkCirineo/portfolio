@@ -7,7 +7,8 @@
         "skipLibCheck": true,
         "paths": {
             "@components/*": ["./src/components/*"],
-            "@stores/*": ["./src/stores/*"]
+            "@stores/*": ["./src/stores/*"],
+            "@typings/*": ["./src/typings/*"]
         },
 
         /* Bundler mode */

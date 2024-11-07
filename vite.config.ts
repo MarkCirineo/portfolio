@@ -9,6 +9,7 @@ export default defineConfig({
         alias: {
             "@components": resolve(__dirname, "./src/components"),
             "@stores": resolve(__dirname, "./src/stores"),
+            "@typings": resolve(__dirname, "./src/typings"),
         },
     },
 });
