@@ -15,6 +15,9 @@
                 </component>
             </template>
         </div>
+        <div v-if="!scrolled" class="hero-scroll-indicator">
+            <span class="arrow">↓</span>
+        </div>
     </div>
 </template>
 
@@ -24,6 +27,12 @@ import { Button } from "@typings/hero";
 
 export default defineComponent({
     name: "Hero",
+
+    data() {
+        return {
+            scrolled: false,
+        };
+    },
 
     computed: {
         buttons(): Button[] {
@@ -68,11 +77,29 @@ export default defineComponent({
         },
     },
 
+    beforeMount() {
+        addEventListener("scroll", this.handleScroll);
+    },
+
+    beforeUnmount() {
+        removeEventListener("scroll", this.handleScroll);
+    },
+
     methods: {
         handleClick(button: Button) {
             if (button.callback) {
                 button.callback();
             }
+        },
+
+        handleScroll() {
+            console.log(window.scrollY);
+            if (window.scrollY === 0) {
+                this.scrolled = false;
+                return;
+            }
+
+            this.scrolled = true;
         },
     },
 });
@@ -109,5 +136,31 @@ export default defineComponent({
 
 .hero-icon:hover {
     cursor: pointer;
+}
+
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    animation: bounce 1.5s infinite;
+    color: #555;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+    40% {
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        transform: translate(-50%, -5px);
+    }
 }
 </style>
