@@ -110,6 +110,7 @@ export default defineComponent({
     cursor: pointer;
     display: flex;
     align-items: center;
+    width: max-content;
 }
 
 .work-icon {
