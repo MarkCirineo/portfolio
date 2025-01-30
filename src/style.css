@@ -10,6 +10,9 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --color-primary: rgb(95, 226, 34);
+    --color-hover: var(--color-primary);
 }
 
 body {
