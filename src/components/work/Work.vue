@@ -2,36 +2,34 @@
     <div class="work-wrapper">
         <div class="work">
             <div class="work-text">Work</div>
-            <div class="work-information-wrapper">
-                <div
-                    v-for="job in jobs"
-                    :key="job.company"
-                    class="work-information"
-                >
-                    <div>
-                        <div class="work-information-company">
-                            <a
-                                class="work-information-company-link"
-                                :href="job.link"
-                                target="_blank"
-                            >
-                                {{ job.company }}
-                                <i
-                                    class="fa-solid fa-arrow-up-right-from-square work-icon"
-                                />
-                            </a>
-                        </div>
-                        <div
-                            v-for="position in job.positions"
-                            :key="position.title"
+            <div
+                v-for="job in jobs"
+                :key="job.company"
+                class="work-information"
+            >
+                <div>
+                    <div class="work-information-company">
+                        <a
+                            class="work-information-company-link"
+                            :href="job.link"
+                            target="_blank"
                         >
-                            <div class="work-information-title">
-                                {{ position.title }} ({{ position.dates }})
-                            </div>
+                            {{ job.company }}
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square work-icon"
+                            />
+                        </a>
+                    </div>
+                    <div
+                        v-for="position in job.positions"
+                        :key="position.title"
+                    >
+                        <div class="work-information-title">
+                            {{ position.title }} ({{ position.dates }})
                         </div>
-                        <div class="work-information-bullets">
-                            <li v-for="bullet in job.bullets">{{ bullet }}</li>
-                        </div>
+                    </div>
+                    <div class="work-information-bullets">
+                        <li v-for="bullet in job.bullets">{{ bullet }}</li>
                     </div>
                 </div>
             </div>
@@ -91,10 +89,7 @@ export default defineComponent({
 .work-text {
     font-size: 1.6rem;
     text-align: center;
-}
-
-.work-information-wrapper {
-    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .work-information {
