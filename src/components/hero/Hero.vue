@@ -145,7 +145,8 @@ export default defineComponent({
     transform: translateX(-50%);
     font-size: 24px;
     animation: bounce 1.5s infinite;
-    color: #555;
+    color: white;
+    opacity: 0.7;
 }
 
 @keyframes bounce {
