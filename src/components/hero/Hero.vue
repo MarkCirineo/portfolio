@@ -93,7 +93,6 @@ export default defineComponent({
         },
 
         handleScroll() {
-            console.log(window.scrollY);
             if (window.scrollY === 0) {
                 this.scrolled = false;
                 return;
