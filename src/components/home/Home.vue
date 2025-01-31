@@ -2,6 +2,7 @@
     <div class="home">
         <Hero />
         <Work />
+        <Skills />
     </div>
 </template>
 
@@ -9,6 +10,7 @@
 import { defineComponent } from "vue";
 import Hero from "@components/hero/Hero.vue";
 import Work from "@components/work/Work.vue";
+import Skills from "@components/skills/Skills.vue";
 
 export default defineComponent({
     name: "Home",
@@ -16,6 +18,7 @@ export default defineComponent({
     components: {
         Hero,
         Work,
+        Skills,
     },
 });
 </script>
