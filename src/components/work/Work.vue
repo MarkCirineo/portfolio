@@ -1,7 +1,7 @@
 <template>
     <div class="work-wrapper">
         <div class="work">
-            <div class="work-text">Work</div>
+            <div class="work-text">Experience</div>
             <div
                 v-for="job in jobs"
                 :key="job.company"
@@ -90,6 +90,7 @@ export default defineComponent({
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .work-information {

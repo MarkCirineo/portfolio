@@ -117,6 +117,7 @@ export default defineComponent({
 .skills-text {
     font-size: 1.6rem;
     margin-bottom: 28px;
+    font-weight: 500;
 }
 
 .skills {
