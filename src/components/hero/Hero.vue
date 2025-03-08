@@ -41,9 +41,7 @@ export default defineComponent({
                     key: "Resume",
                     tooltip: "Open Resume",
                     icon: "fa-solid fa-file-lines",
-                    callback: () => {
-                        //
-                    },
+                    link: "/resume.pdf",
                 },
                 {
                     key: "LinkedIn",
