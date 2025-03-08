@@ -120,10 +120,6 @@ export default defineComponent({
     opacity: 0.75;
 }
 
-.work-information-company-link:hover {
-    color: var(--color-hover);
-}
-
 .work-information-bullets {
     margin-top: 8px;
 }
