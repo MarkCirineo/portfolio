@@ -23,7 +23,10 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { mapActions } from "pinia";
+
 import { Button } from "@typings/hero";
+import { useToastStore } from "@stores/toast";
 
 export default defineComponent({
     name: "Hero",
@@ -64,10 +67,15 @@ export default defineComponent({
                             await navigator.clipboard.writeText(
                                 "markcirineo22@gmail.com"
                             );
-
-                            // TODO: Toast
+                            this.createToast({
+                                message: "Email copied to clipboard",
+                                duration: 4000,
+                            });
                         } catch (error) {
-                            // TODO: Error toast
+                            this.createToast({
+                                message: "Failed to copy email",
+                                duration: 4000,
+                            });
                         }
                     },
                 },
@@ -84,6 +92,8 @@ export default defineComponent({
     },
 
     methods: {
+        ...mapActions(useToastStore, ["createToast"]),
+
         handleClick(button: Button) {
             if (button.callback) {
                 button.callback();
