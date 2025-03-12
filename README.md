@@ -1,5 +1,25 @@
-# Vue 3 + TypeScript + Vite
+# Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Portfolio of my work experience, technologies I am proficient with, and my projects. This site is built with Vue 3, Vite, and Typescript.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Set Up
+
+```
+# Clone repo
+git clone git@github.com:markcirineo/portfolio.git
+
+# Instal dependencies
+cd portfolio
+yarn
+```
+
+## Development
+
+```
+# Start development server
+yarn dev
+```
+
+## License
+
+Please refer to the [LICENSE](LICENSE) file for full details
