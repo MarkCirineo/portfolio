@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio of my work experience, technologies I am proficient with, and my projects. This site is built with Vue 3, Vite, and Typescript.
+Portfolio of my work experience, technologies I am proficient with, and my projects. This site is built with Vue 3, Vite, and TypeScript.
 
 ## Set Up
 
