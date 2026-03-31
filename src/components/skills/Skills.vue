@@ -54,7 +54,14 @@ export default defineComponent({
                     name: "Express.js",
                     image: "/assets/technologies/express.svg",
                 },
-
+                {
+                    name: "React",
+                    image: "/assets/technologies/react.svg",
+                },
+                {
+                    name: "Svelte",
+                    image: "/assets/technologies/svelte.svg",
+                },
                 {
                     name: "PostgreSQL",
                     image: "/assets/technologies/postgresql.svg",
@@ -78,15 +85,6 @@ export default defineComponent({
                 {
                     name: "GraphQL",
                     image: "/assets/technologies/graphql.svg",
-                },
-
-                {
-                    name: "React",
-                    image: "/assets/technologies/react.svg",
-                },
-                {
-                    name: "Svelte",
-                    image: "/assets/technologies/svelte.svg",
                 },
                 {
                     name: "TailwindCSS",
