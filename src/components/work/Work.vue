@@ -49,20 +49,26 @@ export default defineComponent({
                 {
                     positions: [
                         {
+                            title: "Software Engineer",
+                            dates: "January 2026 - Present",
+                        },
+                        {
                             title: "Junior Software Engineer",
-                            dates: "April 2023 - Present",
+                            dates: "March 2023 - January 2026",
                         },
                         {
                             title: "Intern",
-                            dates: "February 2022 - April 2023",
+                            dates: "February 2022 - March 2023",
                         },
                     ],
                     company: "Digital Glue",
                     link: "https://www.digitalglue.com/",
                     bullets: [
-                        "Spearheaded the integration of Archiware into the web application, developing and implementing features on both the frontend and backend to ensure efficient and reliable functionality.",
-                        "Led the development of the tagging interface on the frontend, ensuring a seamless user experience.",
-                        "Designed and implemented numerous features for the desktop application; currently serve as the sole developer and maintainer of the app.",
+                        "Led integration of Archiware APIs into the platform, building full-stack functionality to support file restore workflows and media management",
+                        "Developed and maintained features for a cross-platform desktop application, including file browsing, storage mounting, metadata viewing, and file transfer functionality",
+                        "Currently serve as the sole developer and maintainer of the desktop application, owning ongoing feature development, bug fixes, and stability",
+                        "Act as the sole frontend developer for the web application, responsible for building and maintaining user-facing features",
+                        "Collaborate with product managers and backend engineers to scope and deliver features across the stack",
                     ],
                 },
             ],
@@ -93,11 +99,6 @@ export default defineComponent({
     font-weight: 500;
 }
 
-.work-information {
-    border-left: 1px gray solid;
-    padding-left: 18px;
-}
-
 .work-information-title {
     font-size: 1.05rem;
     font-style: italic;
@@ -122,5 +123,6 @@ export default defineComponent({
 
 .work-information-bullets {
     margin-top: 8px;
+    padding-left: 18px;
 }
 </style>
