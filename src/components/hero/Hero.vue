@@ -131,7 +131,7 @@ export default defineComponent({
 /* Name with gradient shimmer */
 .hero-name {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin: 0;
     letter-spacing: -1.5px;
