@@ -1,10 +1,5 @@
 <template>
     <section class="hero" id="hero">
-        <div class="hero-orbs">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
-        </div>
         <div class="hero-content">
             <h1 class="hero-name">Mark Cirineo</h1>
             <p class="hero-title">Full-stack Web Developer</p>
@@ -83,37 +78,16 @@ export default defineComponent({
     overflow: hidden;
 }
 
-/* Animated background orbs */
-.hero-orbs { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.orb {
+/* Ambient background glow */
+.hero::before {
+    content: "";
     position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.12;
-    animation: float 20s ease-in-out infinite;
-}
-.orb-1 {
-    width: 500px; height: 500px;
-    background: var(--color-accent);
-    top: -150px; right: -100px;
-}
-.orb-2 {
-    width: 350px; height: 350px;
-    background: #6366f1;
-    bottom: 120px; left: -40px;
-    animation-delay: -7s;
-}
-.orb-3 {
-    width: 250px; height: 250px;
-    background: var(--color-accent);
-    top: 40%; left: 60%;
-    opacity: 0.06;
-    animation-delay: -14s;
-}
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -30px) scale(1.05); }
-    66% { transform: translate(-20px, 20px) scale(0.95); }
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 600px 400px at 85% 15%, rgba(52, 211, 128, 0.08), transparent),
+        radial-gradient(ellipse 500px 350px at 10% 80%, rgba(99, 102, 241, 0.07), transparent),
+        radial-gradient(ellipse 300px 300px at 60% 50%, rgba(52, 211, 128, 0.03), transparent);
 }
 
 /* Content */
