@@ -30,7 +30,7 @@
                         <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'View Source'">
                             <i class="fa-brands fa-github" />
                         </a>
-                        <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'Live Demo'">
+                        <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'Visit Site'">
                             <i class="fa-solid fa-arrow-up-right-from-square" />
                         </a>
                     </div>

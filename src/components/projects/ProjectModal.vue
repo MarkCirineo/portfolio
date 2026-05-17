@@ -92,7 +92,7 @@
                             class="modal-btn modal-btn-primary"
                         >
                             <i class="fa-solid fa-arrow-up-right-from-square" />
-                            Live Demo
+                            Visit Site
                         </a>
                     </div>
                 </div>
