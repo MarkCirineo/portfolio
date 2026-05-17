@@ -100,7 +100,7 @@ export default defineComponent({
 .orb-2 {
     width: 350px; height: 350px;
     background: #6366f1;
-    bottom: -80px; left: -80px;
+    bottom: 120px; left: -40px;
     animation-delay: -7s;
 }
 .orb-3 {
