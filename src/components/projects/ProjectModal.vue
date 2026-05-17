@@ -250,21 +250,27 @@ export default defineComponent({
 .modal-gallery {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-height: 500px;
     overflow: hidden;
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
     background: var(--color-bg-elevated);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-viewport {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-height: 500px;
+    object-fit: contain;
     display: block;
 }
 
