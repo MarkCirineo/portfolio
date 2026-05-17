@@ -29,7 +29,7 @@ export const projects: Project[] = [
         title: "Guess Who Online",
         tagline: "Real-time multiplayer board game",
         description:
-            "A real-time multiplayer adaptation of the classic Guess Who board game. Create or join rooms with friends, ask yes-or-no questions, and strategically eliminate characters to deduce your opponent's pick — all powered by WebSocket connections for instant, lag-free gameplay.",
+            "A real-time multiplayer adaptation of the classic Guess Who board game. Create or join rooms with friends, ask yes-or-no questions, and strategically eliminate characters to deduce your opponent's pick.",
         technologies: [
             "Next.js",
             "React",
@@ -48,9 +48,9 @@ export const projects: Project[] = [
     {
         slug: "track-course",
         title: "Track Course",
-        tagline: "Trackman course viewer & score tracker",
+        tagline: "TrackMan® course viewer & score tracker",
         description:
-            "Browse and search Trackman golf simulator courses with detailed slope and course ratings. Save your favorite courses to a personal list and track your scores over time to monitor improvement and trends.",
+            "Browse and search TrackMan® golf simulator courses with detailed slope and course ratings. Save your favorite courses to a personal list and track your scores.",
         technologies: ["TypeScript", "Vue.js", "Node.js", "CSS"],
         thumbnailImage: "/assets/projects/track-course/thumb.webp",
         screenshots: [
@@ -80,7 +80,7 @@ export const projects: Project[] = [
         title: "Putt Calc",
         tagline: "Golf simulator putting calculator",
         description:
-            "A precision putting calculator designed for golf simulators. Input your distance and green conditions to get accurate aim and speed recommendations for sinking more putts consistently.",
+            "A putting calculator built for golf simulators. Enter your distance and handicap to generate a realistic putt count to plug into the sim.",
         technologies: ["TypeScript", "Vue.js", "CSS"],
         thumbnailImage: "/assets/projects/putt-calc/thumb.webp",
         screenshots: [
