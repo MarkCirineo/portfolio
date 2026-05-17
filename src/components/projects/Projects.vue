@@ -7,7 +7,11 @@
                 :key="project.slug"
                 class="project-card glass-card"
                 v-scroll-reveal="{ delay: index * 100 }"
+                tabindex="0"
+                role="button"
                 @click="selectedProject = project"
+                @keydown.enter="selectedProject = project"
+                @keydown.space.prevent="selectedProject = project"
             >
                 <div class="card-thumbnail">
                     <img
@@ -27,10 +31,10 @@
                         <span v-for="tech in project.technologies.slice(0, 4)" :key="tech" class="card-tech-pill">{{ tech }}</span>
                     </div>
                     <div class="card-links">
-                        <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'View Source'">
+                        <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'View Source'" aria-label="View source on GitHub">
                             <i class="fa-brands fa-github" />
                         </a>
-                        <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'Visit Site'">
+                        <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener" class="card-link" @click.stop v-tooltip="'Visit Site'" aria-label="Visit live site">
                             <i class="fa-solid fa-arrow-up-right-from-square" />
                         </a>
                     </div>

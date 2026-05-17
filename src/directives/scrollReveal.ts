@@ -27,6 +27,15 @@ const scrollRevealDirective: ObjectDirective<HTMLElement, ScrollRevealOptions> =
             );
 
             observer.observe(el);
+            (el as any)._scrollRevealObserver = observer;
+        },
+
+        unmounted(el) {
+            const observer = (el as any)._scrollRevealObserver;
+            if (observer) {
+                observer.disconnect();
+                delete (el as any)._scrollRevealObserver;
+            }
         },
     };
 

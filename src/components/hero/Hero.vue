@@ -6,7 +6,7 @@
             <div class="hero-buttons">
                 <template v-for="button in buttons" :key="button.key">
                     <component
-                        :is="button.link ? 'a' : 'span'"
+                        :is="button.link ? 'a' : 'button'"
                         :href="button.link ?? undefined"
                         target="_blank"
                         v-tooltip.bottom="{ content: button.tooltip, distance: 10 }"
@@ -57,7 +57,10 @@ export default defineComponent({
             ];
         },
     },
-    beforeMount() { addEventListener("scroll", this.handleScroll); },
+    mounted() {
+        window.addEventListener("scroll", this.handleScroll);
+        this.handleScroll();
+    },
     beforeUnmount() { removeEventListener("scroll", this.handleScroll); },
     methods: {
         ...mapActions(useToastStore, ["createToast"]),

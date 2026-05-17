@@ -37,6 +37,7 @@ export default defineComponent({
 
     mounted() {
         window.addEventListener("scroll", this.handleScroll);
+        this.handleScroll();
     },
 
     beforeUnmount() {

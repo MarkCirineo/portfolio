@@ -1,8 +1,8 @@
 <template>
     <Transition name="modal">
         <div v-if="project" class="modal-overlay" @click.self="close">
-            <div class="modal-container">
-                <button class="modal-close" @click="close">
+            <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <button class="modal-close" @click="close" aria-label="Close">
                     <i class="fa-solid fa-xmark" />
                 </button>
 
@@ -33,6 +33,7 @@
                         v-if="project.screenshots.length > 1"
                         class="gallery-arrow gallery-arrow-left"
                         @click="prevImage"
+                        aria-label="Previous screenshot"
                     >
                         <i class="fa-solid fa-chevron-left" />
                     </button>
@@ -40,6 +41,7 @@
                         v-if="project.screenshots.length > 1"
                         class="gallery-arrow gallery-arrow-right"
                         @click="nextImage"
+                        aria-label="Next screenshot"
                     >
                         <i class="fa-solid fa-chevron-right" />
                     </button>
@@ -48,19 +50,20 @@
                         v-if="project.screenshots.length > 1"
                         class="gallery-dots"
                     >
-                        <span
+                        <button
                             v-for="(_, i) in project.screenshots"
                             :key="i"
                             class="gallery-dot"
                             :class="{ active: i === currentIndex }"
                             @click="currentIndex = i"
+                            :aria-label="'Go to screenshot ' + (i + 1)"
                         />
                     </div>
                 </div>
 
                 <!-- Project Info -->
                 <div class="modal-info">
-                    <h2 class="modal-title">{{ project.title }}</h2>
+                    <h2 id="modal-title" class="modal-title">{{ project.title }}</h2>
                     <p class="modal-description">{{ project.description }}</p>
 
                     <div class="modal-tech">
@@ -155,7 +158,7 @@ export default defineComponent({
         },
 
         prevImage() {
-            if (!this.project) return;
+            if (!this.project || this.project.screenshots.length === 0) return;
             this.imageError = false;
             this.currentIndex =
                 (this.currentIndex - 1 + this.project.screenshots.length) %
@@ -163,7 +166,7 @@ export default defineComponent({
         },
 
         nextImage() {
-            if (!this.project) return;
+            if (!this.project || this.project.screenshots.length === 0) return;
             this.imageError = false;
             this.currentIndex =
                 (this.currentIndex + 1) % this.project.screenshots.length;

@@ -93,7 +93,6 @@ export default defineComponent({
 
 @media (max-width: 640px) {
     .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
         gap: var(--space-sm);
     }
     .skill-card {

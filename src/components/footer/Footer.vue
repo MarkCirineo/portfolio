@@ -2,13 +2,13 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/mark-cirineo/" target="_blank" rel="noopener" class="footer-link">
+                <a href="https://www.linkedin.com/in/mark-cirineo/" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn profile">
                     <i class="fa-brands fa-linkedin" />
                 </a>
-                <a href="https://www.github.com/markcirineo" target="_blank" rel="noopener" class="footer-link">
+                <a href="https://www.github.com/markcirineo" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub profile">
                     <i class="fa-brands fa-github" />
                 </a>
-                <a href="/resume.pdf" target="_blank" class="footer-link">
+                <a href="/resume.pdf" target="_blank" class="footer-link" aria-label="Resume (PDF)">
                     <i class="fa-solid fa-file-lines" />
                 </a>
             </div>
