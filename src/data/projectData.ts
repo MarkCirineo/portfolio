@@ -17,6 +17,7 @@ export const projects: Project[] = [
         ],
         thumbnailImage: "/assets/projects/terravia/thumb.webp",
         screenshots: [
+            "/assets/projects/terravia/thumb.webp",
             "/assets/projects/terravia/screenshot-1.webp",
             "/assets/projects/terravia/screenshot-2.webp",
             "/assets/projects/terravia/screenshot-3.webp",
@@ -41,6 +42,8 @@ export const projects: Project[] = [
         screenshots: [
             "/assets/projects/guess-who/screenshot-1.webp",
             "/assets/projects/guess-who/screenshot-2.webp",
+            "/assets/projects/guess-who/screenshot-3.webp",
+            "/assets/projects/guess-who/screenshot-4.webp",
         ],
         githubUrl: "https://github.com/MarkCirineo/guess-who",
         liveUrl: "https://playguesswho.net",
@@ -54,8 +57,8 @@ export const projects: Project[] = [
         technologies: ["TypeScript", "Vue.js", "Node.js", "CSS"],
         thumbnailImage: "/assets/projects/track-course/thumb.webp",
         screenshots: [
+            "/assets/projects/track-course/thumb.webp",
             "/assets/projects/track-course/screenshot-1.webp",
-            "/assets/projects/track-course/screenshot-2.webp",
         ],
         githubUrl: "https://github.com/MarkCirineo/track-course",
         liveUrl: "https://trackcourse.app",
@@ -69,8 +72,7 @@ export const projects: Project[] = [
         technologies: ["Svelte", "TypeScript", "CSS"],
         thumbnailImage: "/assets/projects/nfl-countdown/thumb.webp",
         screenshots: [
-            "/assets/projects/nfl-countdown/screenshot-1.webp",
-            "/assets/projects/nfl-countdown/screenshot-2.webp",
+            "/assets/projects/nfl-countdown/thumb.webp"
         ],
         githubUrl: "https://github.com/MarkCirineo/nfl-countdown",
         liveUrl: "https://ctdn.xyz",
@@ -84,8 +86,7 @@ export const projects: Project[] = [
         technologies: ["TypeScript", "Vue.js", "CSS"],
         thumbnailImage: "/assets/projects/putt-calc/thumb.webp",
         screenshots: [
-            "/assets/projects/putt-calc/screenshot-1.webp",
-            "/assets/projects/putt-calc/screenshot-2.webp",
+            "/assets/projects/putt-calc/thumb.webp",
         ],
         githubUrl: "https://github.com/MarkCirineo/putt-calc",
         liveUrl: "https://putt.markcirineo.com",
