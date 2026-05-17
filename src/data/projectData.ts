@@ -27,7 +27,7 @@ export const projects: Project[] = [
     },
     {
         slug: "guess-who",
-        title: "Guess Who Online",
+        title: "Guess Who",
         tagline: "Real-time multiplayer board game",
         description:
             "A real-time multiplayer adaptation of the classic Guess Who board game. Create or join rooms with friends, ask yes-or-no questions, and strategically eliminate characters to deduce your opponent's pick.",
@@ -99,7 +99,10 @@ export const projects: Project[] = [
             "The site you're looking at right now. A single-page portfolio built with Vue 3 and TypeScript, featuring a glassmorphic dark theme, scroll-triggered animations, and a project showcase with modal detail views.",
         technologies: ["Vue.js", "TypeScript", "Vite", "CSS"],
         thumbnailImage: "/assets/projects/portfolio/thumb.webp",
-        screenshots: ["/assets/projects/portfolio/screenshot-1.webp"],
+        screenshots: [
+            "/assets/projects/portfolio/thumb.webp",
+            "/assets/projects/portfolio/screenshot-1.webp",
+        ],
         githubUrl: "https://github.com/MarkCirineo/portfolio",
         liveUrl: "https://markcirineo.com",
     },
