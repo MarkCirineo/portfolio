@@ -48,9 +48,9 @@ export const projects: Project[] = [
     {
         slug: "track-course",
         title: "Track Course",
-        tagline: "TrackMan® course viewer & score tracker",
+        tagline: "Trackman course viewer & score tracker",
         description:
-            "Browse and search TrackMan® golf simulator courses with detailed slope and course ratings. Save your favorite courses to a personal list and track your scores.",
+            "Browse and search Trackman golf simulator courses with detailed slope and course ratings. Save your favorite courses to a personal list and track your scores.",
         technologies: ["TypeScript", "Vue.js", "Node.js", "CSS"],
         thumbnailImage: "/assets/projects/track-course/thumb.webp",
         screenshots: [
