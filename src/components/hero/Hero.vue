@@ -153,6 +153,7 @@ export default defineComponent({
     border: 1px solid var(--color-glass-border);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    color: var(--color-text-primary);
     cursor: pointer;
     transition: all var(--transition-base);
 }
