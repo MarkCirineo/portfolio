@@ -72,6 +72,8 @@ export default defineComponent({
                 terravia: "linear-gradient(135deg, #0f766e, #134e4a)",
                 "guess-who": "linear-gradient(135deg, #1e40af, #1e3a5f)",
                 "track-course": "linear-gradient(135deg, #166534, #14532d)",
+                arcadekit: "linear-gradient(135deg, #5b21b6, #2e1065)",
+                adpscout: "linear-gradient(135deg, #b45309, #78350f)",
                 "nfl-countdown": "linear-gradient(135deg, #9f1239, #4c0519)",
                 "putt-calc": "linear-gradient(135deg, #065f46, #064e3b)",
                 portfolio: "linear-gradient(135deg, #1a1a2e, #16213e)",

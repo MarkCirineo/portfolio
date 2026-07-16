@@ -49,6 +49,51 @@ export const projects: Project[] = [
         liveUrl: "https://playguesswho.net",
     },
     {
+        slug: "arcadekit",
+        title: "ArcadeKit",
+        tagline: "Instant multiplayer games with friends",
+        description:
+            "A multiplayer game platform where you create a room, share a link, and start playing within seconds — no downloads, no accounts. Built on a plug-in game architecture with a growing library including Battleship, Connect Four, Word Scramble, and Reaction Race, all running on a real-time WebSocket game server.",
+        technologies: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "WebSockets",
+            "Node.js",
+            "TailwindCSS",
+            "Docker",
+        ],
+        thumbnailImage: "/assets/projects/arcadekit/thumb.webp",
+        screenshots: [
+            "/assets/projects/arcadekit/thumb.webp",
+            "/assets/projects/arcadekit/screenshot-1.webp",
+            "/assets/projects/arcadekit/screenshot-2.webp",
+        ],
+        githubUrl: "https://github.com/MarkCirineo/game-network",
+        liveUrl: "https://arcadekit.games",
+    },
+    {
+        slug: "adpscout",
+        title: "ADP Scout",
+        tagline: "Fantasy football draft assistant",
+        description:
+            "Compare average draft position across Sleeper, ESPN, and Yahoo against expert consensus rankings to find value picks, steals, and reaches for your fantasy football draft. Includes per-platform data sync, fuzzy player search, and a virtualized board that stays fast with hundreds of players.",
+        technologies: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "PostgreSQL",
+            "Prisma",
+        ],
+        thumbnailImage: "/assets/projects/adpscout/thumb.webp",
+        screenshots: [
+            "/assets/projects/adpscout/thumb.webp",
+            "/assets/projects/adpscout/screenshot-1.webp",
+        ],
+        githubUrl: "https://github.com/MarkCirineo/ff-adp-compare",
+        liveUrl: "https://adpscout.com",
+    },
+    {
         slug: "track-course",
         title: "Track Course",
         tagline: "Trackman course viewer & score tracker",
